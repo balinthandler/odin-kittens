@@ -8,6 +8,9 @@
   </div>
   <div class="level-right">
     <div class="level-item">
+      <%= link_to "Edit", edit_kitten_path(@kitten), class: "button is-primary" %>
+    </div>
+    <div class="level-item">
       <%= link_to "Delete", @kitten, method: :delete, class: "button is-danger" %>
     </div>
   </div>

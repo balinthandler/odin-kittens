@@ -15,14 +15,14 @@
   </div>
   <div class="block">
     <%= f.label :cuteness %>
-    <%= f.text_field :cuteness, placeholder: "Kitten's age", class: "input"%>
+    <%= f.text_field :cuteness, placeholder: "Describe kitten's cuteness", class: "input"%>
     <% @kitten.errors.full_messages_for(:cuteness).each do |msg| %>
       <p class="validationerror"><%= msg %></p>
     <% end %>
   </div>
   <div class="block">
     <%= f.label :softness %>
-    <%= f.text_field :softness, placeholder: "Kitten's age", class: "input"%>
+    <%= f.text_field :softness, placeholder: "Describe kitten's softness", class: "input"%>
     <% @kitten.errors.full_messages_for(:softness).each do |msg| %>
       <p class="validationerror"><%= msg %></p>
     <% end %>

@@ -45,6 +45,7 @@ group :development do
   gem 'spring'
   gem 'guard', '~> 2.17'
   gem 'guard-livereload', '~> 2.5', require: false
+  gem 'rest-client', '~> 2.1'
 end
 
 group :test do
