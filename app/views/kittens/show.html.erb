@@ -1,5 +1,16 @@
-<div class="title is-2">
-  <%= @kitten.name + " profile" %>
+<div class="level">
+  <div class="level-left">
+    <div class="level-item">
+      <div class="title is-2">
+        <%= @kitten.name + " profile" %>
+      </div>
+    </div>
+  </div>
+  <div class="level-right">
+    <div class="level-item">
+      <%= link_to "Delete", @kitten, method: :delete, class: "button is-danger" %>
+    </div>
+  </div>
 </div>
 <div class="block">
   <%= "Age: " + @kitten.age.to_s %>
