@@ -1,0 +1,32 @@
+<%= form_with(model: @kitten, local: true) do |f| %>
+  <div class="block">
+    <%= f.label :name %>
+    <%= f.text_field :name, placeholder: "Kitten's name", class: "input", autofocus: true%>
+    <% @kitten.errors.full_messages_for(:name).each do |msg| %>
+      <p class="validationerror"><%= msg %></p>
+    <% end %>
+  </div>
+  <div class="block">
+    <%= f.label :age %>
+    <%= f.text_field :age, placeholder: "Kitten's age", class: "input"%>
+    <% @kitten.errors.full_messages_for(:age).each do |msg| %>
+      <p class="validationerror"><%= msg %></p>
+    <% end %>
+  </div>
+  <div class="block">
+    <%= f.label :cuteness %>
+    <%= f.text_field :cuteness, placeholder: "Kitten's age", class: "input"%>
+    <% @kitten.errors.full_messages_for(:cuteness).each do |msg| %>
+      <p class="validationerror"><%= msg %></p>
+    <% end %>
+  </div>
+  <div class="block">
+    <%= f.label :softness %>
+    <%= f.text_field :softness, placeholder: "Kitten's age", class: "input"%>
+    <% @kitten.errors.full_messages_for(:softness).each do |msg| %>
+      <p class="validationerror"><%= msg %></p>
+    <% end %>
+  </div>
+  <%= f.submit class: "button is-primary" %>
+  <%= link_to "Cancel", root_path, class: "button is-info" %>
+<% end %>

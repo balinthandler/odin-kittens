@@ -1,1 +1,11 @@
-
+<%= link_to "Add new kitten", new_kitten_path, class: "button is-info" %>
+<br />
+<br />
+<div class="title is-3">
+  Kittens:
+</div>
+<% @kittens.each do |kitten| %>
+  <div class="block">
+    <%= link_to kitten.name, kitten %>
+  </div>
+<% end %>

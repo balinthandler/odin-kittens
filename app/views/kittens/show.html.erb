@@ -1,0 +1,13 @@
+<div class="title is-2">
+  <%= @kitten.name + " profile" %>
+</div>
+<div class="block">
+  <%= "Age: " + @kitten.age.to_s %>
+</div>
+<div class="block">
+  <%= "Cuteness: " + @kitten.cuteness %>
+</div>
+<div class="block">
+  <%= "Softness: " + @kitten.softness %>
+</div>
+<%= link_to "Back to home page", root_path, class: "button is-info" %>
